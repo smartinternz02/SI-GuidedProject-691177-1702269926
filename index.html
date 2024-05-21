@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        .button-container {
+            text-align: right; /* Align the buttons to the right */
+        }
+        .button {
+            margin-left: 0px; /* Add some spacing between the buttons */
+            margin-top: 20px;
+        }
+        .text1{
+            margin-top: 40px;
+        }
+        .image{
+            width: 350px;
+            height: 250px;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+        .image2{
+            width: 400px;
+            height: 350px;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        .contact{
+          margin-top: 20px;
+          margin-right: 400px;
+          font-size: 30px;
+          font-family: roboto;
+          font-weight: 300;
+
+        }
+        
+
+      /* Style inputs */
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      /* Style the container/contact section */
+      .container {
+        border-radius: 5px;
+        /*background-color: #f2f2f2;*/
+        padding: 10px;
+      }
+
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 text1">
+          <p class="text-danger ml-3">Estimation of smoke</p>
+          <h1 class="text-dark ml-3">Estimating the presence or absence of smoking through bio-signals</h1>
+          <button class="btn btn-danger text-white m-4 ml-3">Know More...</button>
+          <div>
+          <img src="https://i.ytimg.com/vi/zVgZ0PGPhzU/maxresdefault.jpg"
+          class="image2"
+          />
+        </div>
+        </div>
+        <div class="col-6 button-container button">
+          <button class="btn btn-danger text-white  ">Home</button>
+          <button class="btn btn-danger text-white  ">Predict</button>
+          <div>
+          <img class="image"
+          src="https://th.bing.com/th/id/OIP.ABU0AL9fOhKLZ0nXFUuk8wAAAA?pid=ImgDet&rs=1"  
+          />
+        </div>
+        <h1 class="contact">contact us</h1>
+              <form action="/" method='POST'>
+                <p>
+                <label for="firstname">Full Name</label>
+                <input type="text" id="firstname" name="name" placeholder="Your name..">
+              </p>
+              <p>
+                <label for="Email">Email</label>
+                <input type="text" id="lname" name="Email" placeholder="Your Email..">
+              </p>
+                <label for="subject">Subject</label>
+                <input type="text" id="lname" name="subject" placeholder=" ">
+                <label for="subject">Tell about your project</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" name="Send Message">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+    </form>
+  </body>
+</html>

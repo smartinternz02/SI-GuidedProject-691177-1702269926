@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        .text1{
+            margin-top: 40px;
+        }
+        .image{
+            width: 350px;
+            height: 250px;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <div class="row p-5">
+        <div class="col-6 text1"><!-- col-12 col-lg-6 col-xl-4 -->
+          <h6 class="text-danger mt-5">Estimation of smoke</h6>
+          <h1 class="flask-output">Predicted Output :<span class="text-success"> {{ session['predicted_label'] }}</span> </h1>
+        </div>
+        <div class="col-6 button-container button">
+          <button class="btn btn-danger text-white  ">Home</button>
+          <button class="btn btn-danger text-white  ">Predict</button>
+          <div>
+          <img class="image"
+          src="https://th.bing.com/th/id/OIP.ABU0AL9fOhKLZ0nXFUuk8wAAAA?pid=ImgDet&rs=1"  
+          />
+        </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="section_gen_info p-5">
+        <div class="container bg-info p-5 mt-5 shadow text-center">
+         <div class="row d-flex flex-colmun justify-content-center">
+           <div col="6" class="bg-white p-5">
+            <h4 class="text-success mb-1">General Information</h4>
+            <form action="/gen_info"method="post">
+                <label class="m-1" for="id" >ID:</label>
+                <input class="m-2 w-75" type="text" id="id" name="id" placeholder="id" required="required"><br/>
+                <label for="Gender" >Gender:</label>
+                <input class="m-2" type="text" id="Gender" name="Gender" placeholder="Gender" required="required">
+                <label for="Gender" >Age:</label>
+                <input class="m-2" type="text" id="Age" name="Age" placeholder="Age" required="required"><br/>
+                <label for="Gender" >Height:</label>
+                <input class="m-2" type="text" id="Height" name="Height" placeholder="Height" required="required">
+                <label for="Gender" >Weight:</label>
+                <input class="m-2" type="text" id="Weight" name="Weight" placeholder="Weight" required="required"><br/>
+                </div>
+            <div col="6" class="bg-danger p-2">
+                <h5 class="text-white mb-3 mt-2">Person Details</h5>
+                <label for="Gender" >Eyesight_right:</label>
+                <input class="m-2" type="text" id="Eyesight_right" name="Eyesight_right" placeholder="Eyesight_right" required="required">
+                <label for="Gender" >Eyesight_left:</label>
+                <input class="m-2" type="text" id="Eyesight_left" name="Eyesight_left" placeholder="Eyesight_left" required="required"><br/>
+                <label for="Gender" >Hearing_right:</label>
+                <input class="m-2" type="text" id="Hearing_right" name="Hearing_right" placeholder="Hearing_right" required="required">
+                <label for="Gender" >Hearing_left:</label>
+                <input class="m-2"type="text" id="Hearing_left" name="Hearing_left" placeholder="Hearing_left" required="required"><br/>
+                <label for="Gender" >Waist:</label>
+                <input class="m-2" type="text" id="Waist" name="Waist" placeholder="Waist" required="required">
+                <button class="text-success ml-2" type="submit">Predict</button>
+                </div>
+            </form>
+           </div>
+        </div>
+       </div>
+    </center>
+</body>
+</html>
